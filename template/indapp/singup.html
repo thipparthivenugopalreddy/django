@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{%extends 'indapp/base.html'%}
+{%block q%}
+<form  method="post">
+  {{f.as_p}}
+  {%csrf_token%}
+  <input type="submit" name="" value="signup">
+
+</form>
+{%endblock%}
